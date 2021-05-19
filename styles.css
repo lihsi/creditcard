@@ -1,0 +1,55 @@
+body {
+    background-color: #4b3b3b;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 11em;
+    animation: video-animatie 1.2s 1;
+    border: 0px;
+    border-radius: 50px;
+    width: 800px;
+}
+
+#video {
+    text-align: center;
+    width: 30em;
+    border: 0px;
+    /* border-radius: 50px; */
+}
+
+
+@keyframes video-animatie {
+  0%   { opacity: 0%; }
+  100% { opacity: 100%; }
+}
+
+div {
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+}
+
+div img {
+    width: 130px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin: 0 20px;
+    animation: knop-animatie 1.2s 1;
+    border: 0px;
+    border-radius: 20px;
+}
+
+@keyframes knop-animatie {
+  0%   { opacity: 0%; margin: 0px}
+  50%   { opacity: 0%; margin: 0px}
+  100% { opacity: 100%; margin: 0 20px}
+}
+
+div img:hover{
+    transform: scale(1.2);    
+}
